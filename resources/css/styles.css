@@ -5,12 +5,14 @@ margin: 0;
 line-height: 1.4rem;}
 
 .container {max-width: 960px;
-margin: 0 auto;}
+margin: 0 auto;
+}
 
 /* Main Section */
 
 .main {
   background-image: url("../images/glasses-bg.png");
+  background-position: left;
   background-size: cover;
   padding-top: 1rem;
   height: 30rem;}
@@ -58,13 +60,13 @@ left: 2rem;
 justify-content: center;
 padding: 3rem 0;}
 
-.iconbox {height: 8rem; width: auto; display: flex;
+.iconbox {height: 8rem; width: 5rem; display: flex;
 flex-direction: column; align-items: center;
 justify-content: space-between;
 
 }
 
-
+.iconcaption {width: 5rem; text-align: center;}
 
 .iconbox#paper {margin-right: 6rem;}
 .iconbox#ruler {margin-right: 6rem;}
@@ -75,8 +77,6 @@ justify-content: space-between;
 #ruler img {max-width: 5rem;}
 
 #truck img {max-width: 5rem;}
-
-
 
 .about .container {display: flex;
 justify-content: center;}
@@ -105,3 +105,46 @@ margin-top: 5rem;
 
 .footer .logo {color: black;
 margin: 4rem 0 4rem 4rem;}
+
+@media only screen and (max-width: 960px) {
+  .container {max-width: 100%;}
+  .main {padding-top: 0; height: 22rem;}
+  .banner .container {right: 2rem;
+  top: 5rem;}
+  .bannertext {left: 0; font-size: 1.33rem;
+  padding: 0.75rem 4rem;}
+}
+
+@media only screen and (max-width: 750px) {
+  .logo span {display: none;}
+  #desktopnav {display: none;}
+  .main {height: 17rem;}
+  .banner .container {top: 9rem; right: 0rem;
+    padding: 0; width: 100%; background-color: white;}
+  .bannertext {margin: 0 auto; display: block;
+  padding: 1rem 0;}
+  .icons {flex-direction: column; align-items: center;
+  padding: 3.77rem 0;}
+  .iconcaption {font-size: 0.77rem;
+   line-height: 1rem;}
+   img {margin: 0;}
+   .iconbox {justify-content: flex-start; height: auto;}
+   #paper, #ruler, #truck {margin: 0 0 1.54rem 0;}
+   .iconbox#paper {margin-right: 0;}
+   .iconbox#ruler {margin-right: 0;}
+   .about .container {flex-direction: column; align-items: center;}
+    #philosophy, #appointments {margin: 0;}
+    .aboutbox {width: 100%;}
+    .abouttext {width: 100%; text-align: center;
+    }
+    .aboutbox p {font-size: 0.77rem; margin-top: 1rem;
+    margin-bottom: 4rem;}
+
+    .footer .container {margin-top: 0;}
+    #footerlogo {margin: 4rem auto;}
+
+}
+
+@media only screen and (min-width: 751px) {
+  #menubutton {display: none;}
+}
