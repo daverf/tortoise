@@ -1,0 +1,90 @@
+html {font-size: 18px;}
+
+body {font-family: helvetica;
+margin: 0;
+line-height: 1.4rem;}
+
+.container {max-width: 960px;
+margin: 0 auto;}
+
+/* Main Section */
+
+.main {
+  background-image: url("../images/glasses-bg.png");
+  background-size: cover;
+  padding-top: 1rem;
+  height: 30rem;}
+
+.header {background-color: cadetblue;
+  padding: 1rem 2rem 1rem 2rem;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;}
+
+.logo {
+  display: flex;
+  align-items: center;}
+
+  .logo img {max-height: 1.5rem;
+  margin-right: 1rem;}
+
+  .logo span {font-size: 1rem;}
+
+.nav {display: flex;}
+
+.nav span {margin-left: 2rem;}
+
+.banner.container {
+  position: relative;
+  top: 10rem;}
+
+.bannertext {
+background-color: white;
+padding: 1.5rem 5rem 1.5rem 5rem;
+font-weight: bold;
+font-size: 2rem;
+}
+
+
+/* Value Icons */
+
+.icons {display: flex;
+justify-content: center;
+padding: 3rem 0;}
+
+.iconbox {height: 8rem; display: flex;
+flex-direction: column; align-items: center;
+justify-content: space-between;
+}
+
+.iconbox#paper {margin-right: 6rem;}
+.iconbox#ruler {margin-right: 6rem;}
+
+#paper img {max-width: 3.5rem; height: auto;}
+#paper span {text-align: center;}
+
+#ruler img {max-width: 5rem;}
+
+.about {display: flex;}
+
+.aboutbox {width: 35%; margin: 0 2.5%;
+}
+
+.abouttext { color: white;
+background-color: cadetblue;
+  width: 10rem;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+}
+
+.footer {background-color: azure;
+display: flex;
+align-items: center;
+margin-top: 5rem;
+padding: 4rem;}
+
+.footer .logo {color: black;}
